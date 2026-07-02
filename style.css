@@ -1,7 +1,12 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    height:auto;
 }
 
 body{
@@ -494,62 +499,145 @@ footer p{
     background: #1E293B;
 }
 
-/*Responsive design*/
-@media(max-width:768px){
+/* =========================
+   Mobile Devices (768px)
+========================= */
+@media screen and (max-width:768px){
 
+    /* Navbar */
     nav{
-        flex-direction:column;
-        gap:15px;
-        padding:15px;
+        flex-direction: column;
+        padding: 12px;
+        gap: 15px;
     }
 
     .navlinks{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
     }
-    .hero{
-    padding:40px 20px;
-}
 
-.hero h1{
-    font-size:32px;
-}
+    .navlinks a{
+        font-size: 15px;
+    }
 
-.hero h3{
-    font-size:22px;
-}
+    main{
+        padding-top: 120px;
+    }
 
-.hero p{
-    width:100%;
-}
+    /* All Sections */
+    .hero,
+    .hero1,
+    .hero2,
+    .hero3,
+    .hero4{
+        min-height: auto;
+        padding: 25px 15px;
+    }
 
-.hero button{
-    width:100%;
-    max-width:250px;
-}
+    /* Home */
+    .hero h1{
+        font-size: 32px;
+    }
 
-.project-card{
-    width:100%;
-}
+    .hero h3{
+        font-size: 22px;
+    }
 
-.skill-card{
-    width:100%;
-    text-align:center;
-}
-   
+    .hero p{
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .hero button,
+    .resume-btn{
+        display: block;
+        width: 220px;
+        margin: 10px auto;
+    }
+
+    /* About */
+    .hero1{
+        gap: 15px;
+    }
 
     .hero1 img{
-        width:180px;
-        height:180px;
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero1 h2,
+    .hero2 h2,
+    .hero3 h2,
+    .hero4 h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .hero1 p{
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    /* Skills */
+    .skill-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .skill-card{
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Projects */
+    .project-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project-card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* Contact */
+    .hero4{
+        padding: 50px 20px;
     }
 
     .hero4 form{
-        width:95%;
+        width: 100%;
+        max-width: 350px;
+        padding: 20px;
     }
-   
-    img{
-    max-width:100%;
-    height:auto;
-}
+
+    .radio-group,
+    .checkbox-group{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    .social-links{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
 }
