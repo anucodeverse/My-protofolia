@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:black;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile{
+    transition: 0.3s;
+}
+
+.profile:hover{
+    transform: scale(1.1);
+}
+.navlinks{
+    display: flex;
+    gap: 30px;
+}
+.navlinks a{
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+
+}
+.navlinks a:hover{
+    color: #38BDF8;
+    transition: 0.3s;
+}
+#emoji{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+section{
+    padding-top:80px;
+    padding-bottom:80px;
+}
+/*home section */
+.hero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:  #0A192F;
+    padding: 60px 100px;
+    color: white;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+.hero h1{
+    font-size: 52px;
+    margin-bottom:15px;
+    
+}
+.hero h3{
+    font-size:28px;
+    margin-bottom:20px;
+    color:#38BDF8;
+}
+.hero span{
+    color:#38BDF8;
+}
+.hero p{
+    max-width:700px;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+    color:#d1d5db;
+}
+.hero button{
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    border-radius:8px;
+    background:#2563EB;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.hero button:hover{
+    background:#1D4ED8;
+    transform:translateY(-3px);
+}
+.resume-btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#2563EB;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.resume-btn:hover{
+    background:#1D4ED8;
+}
+/*About section */
+.hero1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:  #F8FAFC;
+    padding: 60px 20px;
+    gap: 20px;
+   
+    min-height: 100vh;
+}
+.hero1 h2{
+    font-size: 40px;
+     color:#0A192F;
+    
+}
+.hero1 p{
+    max-width:700px;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+     color:#4B5563;
+}
+.hero1 img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+     border:4px solid #2563EB;
+     transition: 0.3s;
+}
+.hero1 img:hover{
+    transform:scale(1.05);
+}
+/*Skills section */
+ .hero2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8FAFC;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+.hero2 h2{
+    font-size: 40px;
+    color: #0A192F;
+    margin-bottom: 40px;
+}
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+}
+.skill-card{
+    background: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A192F;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.skill-card:hover{
+    background: #2563EB;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/*projects section*/
+.hero3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F8FAFC;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+.hero3 h2{
+    font-size: 40px;
+    color: #0A192F;
+    margin-bottom: 40px;
+}
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card{
+    width: 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.project-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.project-card h3{
+    color: #2563EB;
+    margin-bottom: 15px;
+}
+.project-card p{
+    color: #4B5563;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.project-card button{
+    padding: 10px 20px;
+    background: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;   
+}
+.project-card button:hover{
+    background: #1D4ED8;
+}
+/*Form*/
+.hero4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #F8FAFC;
+    padding: 60px 20px;
+}
+
+.hero4 h2{
+    font-size: 40px;
+    color: #0A192F;
+    margin-bottom: 30px;
+}
+
+.hero4 form{
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero4 label{
+    font-weight: bold;
+    color: #0A192F;
+}
+
+.hero4 input[type="text"],
+.hero4 input[type="email"],
+.hero4 textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.hero4 input[type="text"]:focus,
+.hero4 input[type="email"]:focus,
+.hero4 textarea:focus{
+    border-color:#2563EB;
+    box-shadow:0 0 5px rgba(37,99,235,.3);
+}
+
+.hero4 textarea{
+    resize: none;
+    height: 120px;
+}
+
+.hero4 button{
+    background: #2563EB;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero4 button:hover{
+    background: #1D4ED8;
+    transform: translateY(-3px);
+}
+.radio-group,
+.checkbox-group{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.radio-group input,
+.checkbox-group input{
+    width:auto;
+    margin:0;
+}
+
+.radio-group label,
+.checkbox-group label{
+    margin-right:20px;
+    font-weight:normal;
+}
+button:focus,
+a:focus,
+input:focus,
+textarea:focus{
+    outline:2px solid #38BDF8;
+    outline-offset:2px;
+}
+/*Footer*/
+footer{
+    width: 100%;
+    background: #0A192F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h3{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+footer p{
+    margin:10px 0;
+    font-size:16px;
+}
+
+.social-links{
+    margin:25px 0;
+}
+
+.social-links a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    color:#38BDF8;
+}
+
+.copyright{
+    margin-top:25px;
+    color:#9CA3AF;
+    font-size:14px;
+}
+.social-links img{
+    width:40px;
+    margin:0 12px;
+    transition:0.3s;
+}
+
+.social-links img:hover{
+    transform:scale(1.2);
+}
+/*dark mode*/
+.dark-mode{
+    background:#0F172A;
+    color:white;
+}
+
+.dark-mode nav{
+    background:#020617;
+}
+
+.dark-mode .hero,
+.dark-mode .hero1,
+.dark-mode .hero2,
+.dark-mode .hero3,
+.dark-mode .hero4{
+    background:#0F172A;
+    color:white;
+}
+
+.dark-mode .project-card,
+.dark-mode .skill-card,
+.dark-mode form{
+    background:#1E293B;
+    color:white;
+}
+
+.dark-mode input,
+.dark-mode textarea{
+    background:#334155;
+    color:white;
+    border:1px solid #475569;
+}
+
+.dark-mode footer{
+    background:black;
+}
+.dark-mode .hero p,
+.dark-mode .hero1 p,
+.dark-mode .project-card p{
+    color:#D1D5DB;
+}
+
+.dark-mode .hero1 h2,
+.dark-mode .hero2 h2,
+.dark-mode .hero3 h2,
+.dark-mode .hero4 h2{
+    color:white;
+}
+
+.dark-mode .project-card h3{
+    color:#38BDF8;
+}
+/* Contact Form Dark Mode */
+.dark-mode .hero4 label{
+    color: white;
+}
+
+.dark-mode .hero4 input,
+.dark-mode .hero4 textarea{
+    background: #334155;
+    color: white;
+    border: 1px solid #475569;
+}
+
+.dark-mode .hero4 input::placeholder,
+.dark-mode .hero4 textarea::placeholder{
+    color: #CBD5E1;
+}
+
+.dark-mode .radio-group label,
+.dark-mode .checkbox-group label{
+    color: white;
+}
+
+.dark-mode .hero4 h2{
+    color: white;
+}
+
+.dark-mode .hero4 form{
+    background: #1E293B;
+}
+
+/*Responsive design*/
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    .navlinks{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+    .hero{
+    padding:40px 20px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero h3{
+    font-size:22px;
+}
+
+.hero p{
+    width:100%;
+}
+
+.hero button{
+    width:100%;
+    max-width:250px;
+}
+
+.project-card{
+    width:100%;
+}
+
+.skill-card{
+    width:100%;
+    text-align:center;
+}
+   
+
+    .hero1 img{
+        width:180px;
+        height:180px;
+    }
+
+    .hero4 form{
+        width:95%;
+    }
+   
+    img{
+    max-width:100%;
+    height:auto;
+}
+}
